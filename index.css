@@ -1,0 +1,839 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+
+/*...navigation-section on top(common to every page)*/
+
+.music-player {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+}
+
+.logo-favourites-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+}
+
+.logo-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-container {
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.search-notifications-container {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar {
+    height: 70%;
+    width: 50%;
+    margin-top: 1.1rem;
+}
+
+.search-bar input {
+    height: 50%;
+    width: 90%;
+}
+
+.notification {
+    height: 50%;
+    width: 10%;
+    text-align: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.profile-img-container {
+    height: 100%;
+    width: 22%;
+}
+
+.profile-img-container img {
+    height: 100%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+
+/*.. main-body of music player index page...*/
+
+.container {
+    height: auto;
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    display: inline-block;
+    height: 100%;
+    width: 70%;
+    padding-top: 1rem;
+}
+
+.home-container {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    height: 100%;
+    width: 32%;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 4px 1px lightgrey;
+}
+
+.card-text {
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.card:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.latest-release {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.song-card {
+    height: 10rem;
+    width: 20rem;
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.image-container {
+    height: 80%;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 4px 1px white;
+    border-radius: 5%;
+}
+
+.song-credentials {
+    height: 4rem;
+    width: 6rem;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+.timing-icon {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 12%;
+    left: 85%;
+}
+
+.timing-icon i {
+    display: block;
+    color: white;
+}
+
+
+/*..common alignment-class.*/
+
+.center-align {
+    text-align: center;
+}
+
+.popular-artists {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.profile {
+    height: 100%;
+    width: 15%;
+    transition: all 1s ease-in-out;
+}
+
+.profile:hover {
+    transform: scale(1.3);
+}
+
+.profile-img {
+    height: 75%;
+    width: 100%;
+}
+
+.profile-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 1px lightgrey;
+}
+
+.profile-name {
+    height: 20%;
+    width: 100%;
+}
+
+.profile-name p {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.genres {
+    height: 18vh;
+    width: 100%;
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre-container {
+    height: 100%;
+    width: 13%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.genre-container:hover {
+    transform: scale(1.2);
+}
+
+.stations-container {
+    position: relative;
+}
+
+.div1 {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.div2 {
+    width: 85%;
+    height: 55%;
+    position: absolute;
+    top: 24%;
+    left: 7%;
+    background-color: yellow;
+    z-index: 2;
+}
+
+.div3 {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-color: red;
+    z-index: 3;
+}
+
+.music-disc {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.music-disc img {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+.music-stations {
+    height: 20%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2px;
+    font-size: 0.6rem;
+}
+
+.music-stations p {
+    margin-top: 2px;
+}
+
+.mood {
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    margin-top: 0.8rem;
+    opacity: 0.6;
+}
+
+.mood img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 1px lightgrey;
+}
+
+.mood-name {
+    height: 1.2rem;
+    width: 4rem;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.mood-name p {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.theme-container {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.theme {
+    height: 100%;
+    width: 32%;
+    position: relative;
+}
+
+.theme-image-container {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.theme-image-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+    box-shadow: 0px 0px 4px 1px lightgrey;
+}
+
+.theme-name {
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.latest {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest>div {
+    height: 100%;
+    width: 15%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    box-shadow: 0px 0px 4px 1px lightgrey;
+}
+
+.latest div img {
+    height: 70%;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.latest div p {
+    font-size: 12px;
+    margin-top: 0.1rem;
+    line-height: 1.1rem;
+}
+
+.latest div:hover {
+    transform: scale(1.2);
+}
+
+
+/*...aside-section of music player home page..*/
+
+.aside {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    margin-top: 2px;
+}
+
+.title {
+    margin-top: -0.1rem;
+    display: inline-block;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+    height: 2rem;
+}
+
+.list-link {
+    margin-top: 0.3rem;
+    height: 100%;
+    width: 100%;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 1;
+    display: none;
+    height: 3rem;
+    width: 7rem;
+    background-color: white;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 0.2rem;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.songs-list {
+    height: auto;
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.song-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+    height: 4rem;
+    width: 100%;
+}
+
+.indexNumber {
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.indexNumber span {
+    display: inline-block;
+    margin-top: 1.2rem;
+}
+
+.indexNumber i {
+    color: white;
+    margin-top: 1.2rem;
+}
+
+.song-img {
+    height: 100%;
+    width: 25%;
+    transition: all 1s ease-in-out;
+}
+
+.song-img:hover {
+    transform: scale(1.5);
+}
+
+.song-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.singer-details {
+    height: 100%;
+    width: 45%;
+}
+
+.singer-details h5 {
+    margin: 0;
+    margin-top: 0.7rem;
+}
+
+.favourite-icon {
+    height: 100%;
+    width: 10%;
+    text-align: center;
+}
+
+.favourite-icon i {
+    margin-top: 1.2rem;
+}
+
+
+/*...footer-section(bottom-music Player)...*/
+
+.bottom-music-player {
+    position: fixed;
+    top: 88%;
+    left: 0;
+    height: 4.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 10;
+}
+
+.player-song-controls {
+    width: 73%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-song-img {
+    height: 80%;
+    width: 25%;
+}
+
+.player-song-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.song-artist-details {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-name {
+    height: 80%;
+    width: 45%;
+    padding-top: 0.4rem;
+}
+
+.artist-name p {
+    margin: 0.3rem;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.like-icons {
+    height: 80%;
+    width: 25%;
+    margin-top: 0.5rem;
+    padding-left: 0.2rem;
+}
+
+.song-controls {
+    height: 100%;
+    width: 50%;
+    margin-top: 0.2rem;
+}
+
+.play-pause-controls {
+    width: 50%;
+    height: 2.2rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+
+.play-slider {
+    width: 95%;
+    height: 1.3rem;
+    margin: auto;
+    display: flex;
+}
+
+.play-slider span {
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.slider {
+    width: 80%;
+    display: inline-block;
+    margin: auto;
+}
+
+.control-icons {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio-slider {
+    width: 6rem;
+}
+
+
+/*..singlePlaylist page main-container css..*/
+
+.single-artist-card {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 4px 1px grey;
+}
+
+.artist-image {
+    height: 100%;
+    width: 40%;
+}
+
+.artist-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.artist-details-container {
+    height: 100%;
+    width: 60%;
+}
+
+.artist-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.1rem;
+}
+
+.artist-details-container p {
+    font-size: 12px;
+    text-align: justify;
+    margin: 0.2rem 0.8rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0.5rem;
+    width: 70%;
+    height: 4rem;
+}
+
+.buttons-container div button {
+    width: 8rem;
+    height: 2.5rem;
+    margin-left: 0.7rem;
+    margin-top: 0.5rem;
+    background: linear-gradient(to right, blue, white);
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 4px 1px white;
+}
+
+.single-tracks-container {
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.button-div {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.button-div button {
+    height: 2rem;
+    width: 6rem;
+    box-shadow: 0px 0px 4px 1px gray;
+}
+
+.track-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+    height: 3rem;
+    width: 100%;
+    box-shadow: 0 0 4px 1px grey;
+}
+
+.track-details {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+}
+
+.track-indexNumber {
+    height: 100%;
+    width: 10%;
+    font-size: 0.8rem;
+}
+
+.track-indexNumber span {
+    display: inline-block;
+    margin-top: 1.2rem;
+}
+
+.track-indexNumber i {
+    color: white;
+    margin-top: 1.2rem;
+}
+
+.track-img {
+    height: 100%;
+    width: 20%;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 4px 1px grey;
+}
+
+.track-img:hover {
+    transform: scale(1.5);
+}
+
+.track-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.track-singer-details {
+    height: 100%;
+    width: 50%;
+}
+
+.track-singer-details h5 {
+    margin: 0;
+    margin-top: 0.7rem;
+}
+
+.track-favourite-icon {
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.track-favourite-icon i {
+    margin-top: 1.2rem;
+}
+
+
+/*--aside-section(similar-artists section only) of single-playlist page --*/
+
+.similar-artists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.similar-artists>div {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-image {
+    height: 100%;
+    width: 25%;
+    transition: all 1s ease-in-out;
+}
+
+.track-image:hover {
+    transform: scale(1.4);
+}
+
+.track-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.track-name {
+    height: 100%;
+    width: 50%;
+}
+
+.duration {
+    height: 100%;
+    width: 20%;
+    text-align: end;
+}
